@@ -53,8 +53,10 @@ There are 2 major collections in the application:
 # How to use the app
 - Save the environment variables in the .env folder in the root level of the repo. 
 For example:
+```
 DB_URI = "mongodb://<url>/<db-name>"
 API_KEY = "<api-key>"
+```
 - Start the node server using node / ```nodemon index.js```.
 - Open ```http://localhost:8080``` on your browser. This will open the homepage.
 - Enter the wallet address on the webpage to fetch the transaction and balance for the account.
