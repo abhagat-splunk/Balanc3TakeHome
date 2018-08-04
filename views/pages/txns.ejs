@@ -1,0 +1,57 @@
+<div class="jumbotron text-center">
+    <h1>All Transactions</h1>
+</div>
+
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>View Txn</th>
+            <th>Block Number</th>
+            <th>Hash</th>
+            <th>Time Stamp</th>
+            <th>Nonce</th>
+            <th>Transaction Index</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Value</th>
+            <th>Gas</th>
+            <th>Gas Price</th>
+            <th>Is Error</th>
+            <th>Transaction Receipt Status</th>
+            <th>Input</th>
+            <th>Contract Address</th>
+            <th>Cumulative Gas Used</th>
+            <th>Gas Used</th>
+            <th>Confirmations</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+        <% for (var txn of txns) { %>
+            <tr>
+                <td>
+                    <a href="/transactions/<%= txn.hash %>" class="btn btn-sm btn-primary">View Transaction</a>
+                </td>  
+                <td><%= txn.blockNumber %></td>
+                <td><%= txn.hash %></td>
+                <td><%= txn.timeStamp %></td>
+                <td><%= txn.nonce %></td>
+                <td><%= txn.transactionIndex %></td>
+                <td><%= txn.from %></td>
+                <td><%= txn.to %></td>
+                <td><%= txn.value %></td>
+                <td><%= txn.gas %></td>
+                <td><%= txn.gasPrice %></td>
+                <td><%= txn.isError %></td>
+                <td><%= txn.txreceipt_status %></td>
+                <td><%= txn.input %></td>
+                <td><%= txn.contractAddress %></td>
+                <td><%= txn.cumulativeGasUsed %></td>
+                <td><%= txn.gasUsed %></td>
+                <td><%= txn.confirmations %></td>        
+            </tr>
+        <% } %>
+
+    </tbody>
+</table>

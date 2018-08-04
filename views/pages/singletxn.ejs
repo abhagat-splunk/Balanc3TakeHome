@@ -1,0 +1,19 @@
+<div class="jumbotron text-center">
+    <h4>Transaction Hash: <%= txn.hash %></h4>
+    <p>Block Number: <%= txn.blockNumber %></p>
+    <p>Time Stamp: <%= txn.timeStamp %></p>
+    <p>Nonce: <%= txn.nonce %></p>
+    <p>Transaction Index: <%= txn.transactionIndex %></p>
+    <p>From Address: <%= txn.from %></p>
+    <p>To Address: <%= txn.to %></p>
+    <p>Value: <%= txn.value %></p>
+    <p>Gas: <%= txn.gas %></p>
+    <p>Gas Price: <%= txn.gasPrice %></p>
+   	<p>Is Error: <%= txn.isError %></p>
+    <p>Transaction Receipt Status: <%= txn.txreceipt_status %></p>
+    <p>Input: <%= txn.input %></p>
+    <p>Contract Address: <%= txn.contractAddress %></p>
+    <p>Cumulative Gas Used: <%= txn.cumulativeGasUsed %></p>
+    <p>Gas Used: <%= txn.gasUsed %></p>
+    <p>Confirmations: <%= txn.confirmations %></p> 
+</div>
