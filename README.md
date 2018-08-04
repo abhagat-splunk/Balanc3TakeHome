@@ -62,9 +62,9 @@ API_KEY = "<api-key>"
 - Enter the wallet address on the webpage to fetch the transaction and balance for the account.
 - If you want to see already loaded transactions / already loaded balances, please use the navigation bar on the top.
 - To search a transaction in the underlying database, try querying using the search query parameters in the URL.
-   Example: http://localhost:8080/transactions/search?hash=<Transaction-Hash>
+   Example: ```http://localhost:8080/transactions/search?hash=<Transaction-Hash>```
 This would render the single transaction view and insert the found transaction.
-- To find balance of an account, use: http://localhost:8080/balance/search?addr=<wallet-address>
+- To find balance of an account, use: ```http://localhost:8080/balance/search?addr=<wallet-address>```
 
 
 ##### Thanks to Etherscan.io for providing the API.
